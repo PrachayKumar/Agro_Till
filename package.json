@@ -1,0 +1,21 @@
+{
+  "name": "agrotill",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon app.js"
+  },
+  "devDependencies": {
+    "vite": "^5.4.2"
+  },
+  "dependencies": {
+    "@netlify/functions": "^3.1.2",
+    "aos": "^2.3.4",
+    "express": "^5.1.0",
+    "pg": "^8.14.1",
+    "serverless-http": "^3.2.0",
+    "twilio": "^5.5.2"
+  }
+}

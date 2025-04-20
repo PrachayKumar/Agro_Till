@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Panel - Contact Entries</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    h2 {
+      text-align: center;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    #loginContainer {
+      max-width: 300px;
+      margin: 30px auto;
+      background-color: white;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      border-radius: 8px;
+    }
+    #loginContainer input {
+      width: 100%;
+      padding: 8px;
+      margin: 10px 0;
+    }
+    #loginContainer button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div id="loginContainer">
+    <h3>Admin Login</h3>
+    <input type="password" id="adminPassword" placeholder="Enter password" />
+    <button onclick="validateLogin()">Login</button>
+  </div>
+
+  <div id="entriesSection" style="display: none;">
+    <h2>Contact Form Entries</h2>
+    <table id="entriesTable">
+      <thead>
+        <tr>
+          <th>Name</th><th>Phone</th><th>Email</th><th>Company</th><th>Service</th><th>Message</th><th>Submitted At</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</body>
+<script src="main.js" defer></script>
+</html>
