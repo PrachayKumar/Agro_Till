@@ -71,6 +71,11 @@ body {
   font-family: sans-serif;
   font-weight: bold;
 }
+#profile_pic{
+ height: 250px;
+ border-radius: 50%;
+}
+
 .nav-links {
   display: flex;
   list-style: none;
